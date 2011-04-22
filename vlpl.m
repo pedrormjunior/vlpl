@@ -2,6 +2,19 @@ function nimg = vlpl(img, MIN_HEIGHT_CHAR, MAX_HEIGHT_CHAR, ...
     MIN_WIDTH_VLP, MAX_DISTANCE_CHARS, MAX_DISTANCE_PARTS, ...
     HEIGHT_MEAN_FILTER, WIDTH_MEAN_FILTER, SIZE_DILATE, ...
     SIZE_DILATE_FINAL, DECISION_AMONG_CANDIDATES)
+% Vehicle license plate location algorithm - 2010
+% 
+% Authors:
+%   Pedro R. Mendes Junior
+%   David Menotti
+%   Jose M. R. Neves
+%   Andrea I. Tavares
+% 
+% {pedrormjunior, menottid, jmrneves, andrea.iabrudi}@gmail.com
+% 
+% Computing Department
+% Federal University of Ouro Preto (UFOP)
+% Ouro Preto, Minas Gerais, Brazil
 
 if(ischar(img)), img = imread(img);
 end
